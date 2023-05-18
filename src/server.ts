@@ -27,7 +27,7 @@ const mongoDBstore = new MongoDBStore({
 app.use(
   cors({
     allowedHeaders: ['Content-Type','Authorization'],
-    origin: "http://AnushkaWarapitiya.github.io/skillsetfrontend",
+    origin: "http://AnushkaWarapitiya.github.io",
     methods: ["GET","POST","PUT","DELETE","OPTIONS","HEAD"],
     credentials: true
   })
