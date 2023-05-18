@@ -25,7 +25,12 @@ const mongoDBstore = new MongoDBStore({
 });
 
 app.use(
-  cors()
+  cors({
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    origin: "https://anushkawarapitiya.github.io",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD"],
+    credentials: true
+  })
 );
 
 // Express Bodyparser
